@@ -10,4 +10,9 @@ public class VistasController {
     public String mostrarMascotas() {
         return "mascotas";
     }
+
+    @GetMapping("/")
+    public String redirigir() {
+        return "redirect:/mascotas";
+    }
 }
